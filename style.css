@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#divisao1{
+    padding: 448px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    margin-top: 9px;
+    margin: 0%;
+    background-color: #303030;
+    
+}
+
+.titulo{
+    color: #faf7f7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 59px;
+    position: absolute;
+    top: 200px;   
+    bottom: 10px; 
+    
+}
+    
+
+.textodotitulo{
+    color: aliceblue;
+    font-size: 21px;
+    font-family: sans-serif;
+    line-height: 48px;
+    position: absolute;
+    top: 277px;    
+    bottom: 10px;
+}
+
+
+
+#divisao2{ 
+
+    background-color: #e9e9e9;
+    padding-left: 170px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: block;
+    columns: 3;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+#divisao3{
+    margin: 50px;
+    padding-top: 185px;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+
+}
+
+#textodiv3{
+font-size: 26px;
+margin-top: 50px;
+
+}
+ 
+#titulodiv3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+#imagem{
+   
+   position: absolute;
+   bottom: 300px;
+   top: 750px;
+   right: 55px;
+   width: 430px;
+   
+}
+
+#divdoformulario{
+    
+    display: grid;
+    color: #ffffff;
+    margin-top: 170px;
+    padding: 100px;
+    padding-top: 99px;
+    background-color: #303030;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+input{
+    position: relative;
+    left: 260px;
+    font-family: "raleway";
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #ffffff;
+    width: 500px;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.input{ 
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 169px;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    width: 290px;
+    color: #f3f3f3;
+    background-color: #C07212;
+
+}
+
+.input:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px  #ac722b ;
+    transition-duration: 0.5s;
+}
+
+
+
+
+    
