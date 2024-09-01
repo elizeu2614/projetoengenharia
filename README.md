@@ -1,4 +1,4 @@
-# projetoengenharia
+# Projeto Engenharia
 É um Projeto de desafio e desenvolvimento com base do curso de Tecnologia da Escola da DNC. 
 
 link do site disponibilizado >> https://desafiodnc2.netlify.app/
