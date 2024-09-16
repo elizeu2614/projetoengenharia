@@ -129,7 +129,7 @@ input{
     body {
       font-size: 14px; /* Tamanho ideal para celulares */
     }
-    .div-container {
+    #divisao1 {
         width: 100%; /* A div ocupará toda a largura da tela */
         
        
