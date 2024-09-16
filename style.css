@@ -125,6 +125,17 @@ input{
     box-shadow: 0px 10px 15px  #ac722b ;
     transition-duration: 0.5s;
 }
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Tamanho ideal para celulares */
+    }
+    .div-container {
+        width: 100%; /* A div ocupará toda a largura da tela */
+        
+       
+    padding: 10px; /* Ajusta o espaçamento */
+      }
+  }
 
 
 
