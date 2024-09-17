@@ -128,7 +128,6 @@ input{
 
 
 @media screen and (max-width: 1020px){
-    body{ overflow-x: hidden; }
     #divisao1{ padding: 20%;  }
     .titulo{ font-size: 21px; position: absolute; top: 14%; right: 6%; line-height: 0; }
     .textodotitulo { 
