@@ -127,6 +127,77 @@ input{
 }
 
 
+@media screen and (max-width: 1020px){
+    body{ overflow-x: hidden; }
+    #divisao1{ padding: 20%;  }
+    .titulo{ font-size: 21px; position: absolute; top: 14%; right: 6%; line-height: 0; }
+    .textodotitulo { 
+        
+        position: absolute;
+        right: 10%;
+        top: 5%;
+        gap: 20px;
+        font-size: 21px;
+        font-family: sans-serif;
+    }
+
+    #divisao2{
+        
+        gap: 10px;
+        line-height: 65px;
+        display: grid;
+        text-align: center;
+        
+        padding: 50px; 
+        font-size: 27px;
+   
+    } 
+    
+    #imagem{width: 78%;  display: flex; position: absolute; left: 42px; top: 155%;}
+
+    #divisao3{
+            font-size: 20px; }
+            
+    #titulodiv3{ text-align: center; position: absolute; top: 125%; bottom: 34px;left: 1%; right: 4%; }
+
+    #textodiv3{
+       padding-top: 130%;  }
+       
+       #divdoformulario{
+          margin-top: 1px;
+          padding: 8%;
+     }
+       
+        .input{      
+           
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 150px;
+            transform: translateX(-35px);
+           
+         }
+    
+    
+        input{ 
+            transform: translateX(-50px);
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 1px;
+            font-size: 18px;
+            width: 250px;
+            padding: 10px;
+           
+         }
+         #textodiv4{ 
+            margin-right: 10px;
+            margin-top: 20px;
+            font-size: 22px;
+           
+         }
+     }
+
+
 
 
 
