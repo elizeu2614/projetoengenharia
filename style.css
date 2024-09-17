@@ -131,7 +131,9 @@ input{
      body{ overflow-x: hidden; 
           width: 100%;
           justify-content: center;
-          text-align: center; }
+          text-align: center; 
+         }
+    
     #divisao1{ padding: 20%;  }
     .titulo{ font-size: 21px; position: absolute; top: 14%; right: 6%; line-height: 0; }
     .textodotitulo { 
