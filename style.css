@@ -129,6 +129,7 @@ input{
 
 @media screen and (max-width: 768px){
      body{ overflow-x: hidden; 
+          margin: 0px;
           width: 100%;
           justify-content: center;
           text-align: center; 
