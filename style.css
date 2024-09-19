@@ -127,7 +127,7 @@ input{
 }
 
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 768px){
      body{ overflow-x: hidden; 
           width: 100%;
           justify-content: center;
