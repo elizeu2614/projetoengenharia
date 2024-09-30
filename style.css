@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -5,170 +6,161 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Hero Section */
-#hero {
+/* Divisão 1 (Banner Principal) */
+#divisao1 {
     background-color: #303030;
-    color: #fff;
-    text-align: left;
-    padding: 100px 10%;
+    padding: 150px 10%;
+    color: #faf7f7;
+    text-align: center;
 }
 
-#hero h1 {
+.titulo {
     font-size: 48px;
-    margin-bottom: 20px;
 }
 
-#hero p {
-    font-size: 24px;
+.textodotitulo {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-/* Stats Section */
-#stats {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 10%;
+/* Divisão 2 (Estatísticas) */
+#divisao2 {
     background-color: #e9e9e9;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
-.stat-item h2 {
-    font-size: 36px;
-    color: #333;
+#divisao2 h1 {
+    font-size: 48px;
 }
 
-.stat-item p {
+#divisao2 p {
     font-size: 18px;
 }
 
-/* About Section */
-#about {
-    display: flex;
-    padding: 100px 10%;
-    align-items: center;
+/* Divisão 3 (Descrição com Imagem) */
+#divisao3 {
+    padding: 50px 10%;
+    position: relative;
 }
 
-.about-content {
-    flex: 1;
-    padding-right: 50px;
-}
-
-.about-content h2 {
+#titulodiv3 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.about-content p {
-    font-size: 18px;
+#textodiv3 {
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-.about-image {
-    flex: 1;
+#imagem {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Contact Section */
-#contact {
+/* Formulário */
+#divdoformulario {
     background-color: #303030;
-    color: #fff;
-    padding: 100px 10%;
+    padding: 50px 10%;
+    color: #ffffff;
     text-align: center;
 }
 
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
+#divdoformulario input {
+    width: 100%;
     max-width: 500px;
-    margin: 0 auto;
-}
-
-#contact-form input {
-    margin-bottom: 20px;
     padding: 15px;
+    margin: 10px 0;
     font-size: 18px;
+    border-radius: 10px;
     border: none;
-    border-radius: 5px;
 }
 
-#contact-form button {
+.input {
     background-color: #C07212;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 24px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-#contact-form button:hover {
-    background-color: #a05e0f;
+.input:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px #ac722b;
+    transition-duration: 0.5s;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1234px) {
-    #about {
+/* Responsividade para telas menores */
+@media screen and (max-width: 1324px) {
+    #divisao2 {
         flex-direction: column;
     }
 
-    .about-content {
-        padding-right: 0;
-        margin-bottom: 50px;
+    #divisao2 h1, #divisao2 p {
+        margin-bottom: 20px;
+    }
+
+    #imagem {
+        max-width: 300px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #hero h1 {
+    #divisao1 {
+        padding: 100px 5%;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+
+    .textodotitulo {
+        font-size: 16px;
+    }
+
+    #divisao2 {
+        padding: 20px 5%;
+        font-size: 24px;
+    }
+
+    #divisao2 h1 {
         font-size: 36px;
     }
 
-    #hero p {
+    #divisao3 {
+        padding: 20px 5%;
+    }
+
+    #titulodiv3 {
+        font-size: 28px;
+    }
+
+    #textodiv3 {
+        font-size: 16px;
+    }
+
+    #imagem {
+        max-width: 200px;
+    }
+
+    #divdoformulario {
+        padding: 20px 5%;
+    }
+
+    #divdoformulario input {
+        max-width: 100%;
+    }
+
+    .input {
         font-size: 18px;
-    }
-
-    #stats {
-        flex-direction: column;
-    }
-
-    .stat-item {
-        margin-bottom: 30px;
-    }
-
-    .stat-item h2 {
-        font-size: 30px;
-    }
-
-    .stat-item p {
-        font-size: 16px;
-    }
-
-    .about-content h2 {
-        font-size: 30px;
-    }
-
-    .about-content p {
-        font-size: 16px;
-    }
-
-    #contact h2 {
-        font-size: 30px;
-    }
-
-    #contact-form input,
-    #contact-form button {
-        font-size: 16px;
     }
 }
