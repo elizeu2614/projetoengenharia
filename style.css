@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -128,7 +128,8 @@ input {
         padding-right: 10%; /* Ajuste para melhor responsividade */
     }
 
-    #divisao2 h1, #divisao2 p {
+    #divisao2 h1,
+    #divisao2 p {
         margin-bottom: 20px;
     }
 
@@ -136,6 +137,7 @@ input {
         max-width: 300px; /* Ajusta a largura da imagem */
     }
 }
+
 /* Para Celular (até 768px) */
 @media screen and (max-width: 768px) {
     #divisao1 {
@@ -146,10 +148,20 @@ input {
 
     .titulo {
         font-size: 2.5rem;
+        position: static; /* Remove a posição absoluta */
+        margin: 0 auto; /* Centraliza horizontalmente */
     }
 
     .textodotitulo {
         font-size: 1.1rem;
+        position: static; /* Remove a posição absoluta */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    #divisao2 {
+        padding: 20px; /* Ajusta o padding */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        columns: 1; /* Muda para uma coluna */
     }
 
     #titulodiv3 {
@@ -164,6 +176,8 @@ input {
     .input {
         font-size: 1rem;
         max-width: 90%; /* Adiciona largura máxima para telas pequenas */
+        left: 0; /* Remove a posição relativa */
+        margin: 0 auto; /* Centraliza horizontalmente */
     }
 }
 
@@ -175,7 +189,6 @@ input {
     #divisao2 {
         font-size: 1rem;
     }
-
 
     .input {
         font-size: 18px; /* Mantido */
