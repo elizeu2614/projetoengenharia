@@ -81,6 +81,12 @@ body {
     margin-left: 50px;
 }
 
+/* Ajuste de quebra de linha no texto */
+#textodiv3 br {
+    display: block;
+    margin-bottom: 20px;
+}
+
 /* Formulário */
 #divdoformulario {
     background-color: #303030;
@@ -91,6 +97,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#textodiv4 {
+    margin-bottom: 30px; /* Espaçamento maior entre o título e os inputs */
 }
 
 input {
@@ -120,7 +130,7 @@ input {
     transition-duration: 0.5s;
 }
 
-/* Responsividade para tablets e celulares */
+/* Responsividade para tablets e celulares (já aprovada por você) */
 @media screen and (max-width: 1324px) {
     #divisao2 {
         flex-direction: column;
@@ -185,3 +195,4 @@ input {
         font-size: 18px;
     }
 }
+
