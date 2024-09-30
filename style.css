@@ -1,4 +1,4 @@
-* {
+** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,148 +6,136 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
 }
 
 /* Divisão 1 (Banner Principal) */
 #divisao1 {
+    padding: 448px; /* Mantido */
+    padding-bottom: 30px;
+    padding-left: 9.5%; /* Mantido */
+    margin-top: 9px;
+    margin: 0;
     background-color: #303030;
-    padding: 100px 5%;
-    position: relative;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Alinha itens à esquerda */
-    padding-left: 20px; /* Distância da parede */
+    overflow-x: hidden;
 }
 
 .titulo {
     color: #faf7f7;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 59px; /* Mantido */
+    position: absolute;
+    top: 200px;
+    bottom: 10px;
 }
 
 .textodotitulo {
     color: aliceblue;
-    font-size: 1.3rem;
+    font-size: 21px; /* Mantido */
     font-family: sans-serif;
-    line-height: 1.5;
+    line-height: 48px; /* Mantido */
+    position: absolute;
+    top: 277px;
+    bottom: 10px;
 }
 
 /* Divisão 2 (Estatísticas) */
 #divisao2 {
     background-color: #e9e9e9;
-    padding: 50px 5%;
-    display: flex; /* Alinhamento flex */
-    flex-wrap: wrap; /* Permite que os itens se ajustem em múltiplas linhas */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente */
-}
-
-#divisao2 h1,
-#divisao2 p {
-    margin: 10px; /* Espaçamento entre os elementos */
-    text-align: center; /* Centraliza o texto */
+    padding-left: 180px; /* Mantido */
+    padding-top: 70px; /* Mantido */
+    padding-bottom: 50px; /* Mantido */
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px; /* Mantido */
+    columns: 3; /* Mantido */
 }
 
 /* Divisão 3 (Descrição com Imagem) */
 #divisao3 {
-    padding: 50px 5%;
-    display: flex;
-    flex-wrap: nowrap; /* Mantém os itens em uma única linha */
-    align-items: center;
-    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+    padding-left: 1%; /* Mantido */
+    margin: 50px; /* Mantido */
+    padding-top: 185px; /* Mantido */
+    font-size: 20px; /* Mantido */
+    font-family: sans-serif;
 }
 
 #titulodiv3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    margin-right: 20px; /* Margem à direita para distância da imagem */
 }
 
 #textodiv3 {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 26px; /* Mantido */
+    margin-top: 50px; /* Mantido */
 }
 
 #imagem {
-    max-width: 100%;
-    height: auto;
-    margin-top: 2rem;
+    position: absolute;
+    bottom: 300px; /* Mantido */
+    top: 750px; /* Mantido */
+    right: 5%; /* Mantido */
+    width: 430px; /* Mantido */
 }
 
 /* Formulário */
 #divdoformulario {
-    background-color: #303030;
+    display: grid;
     color: #ffffff;
-    padding: 50px 5%;
+    margin-top: 170px; /* Mantido */
+    padding: 100px; /* Mantido */
+    padding-top: 99px; /* Mantido */
+    background-color: #303030;
     text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o formulário */
+    font-family: sans-serif;
 }
 
 input {
+    position: relative;
+    left: 23%; /* Mantido */
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 22px; /* Mantido */
     background-color: #ffffff;
-    width: 100%;
-    max-width: 500px;
-    margin: 15px 0;
-    padding: 15px;
+    width: 500px; /* Mantido */
+    margin: 30px; /* Mantido */
+    padding: 25px; /* Mantido */
     border-radius: 10px;
     border: none;
 }
 
 .input {
     cursor: pointer;
-    font-size: 1.5rem;
-    padding: 15px 30px;
+    margin-top: 70px; /* Mantido */
+    margin-left: 11.5%; /* Mantido */
+    font-size: 30px; /* Mantido */
+    padding: 20px; /* Mantido */
     border: none;
+    width: 290px; /* Mantido */
     color: #f3f3f3;
     background-color: #C07212;
-    transition: all 0.3s ease;
 }
 
 .input:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 10px 15px rgba(172, 114, 43, 0.3);
+    box-shadow: 0px 10px 15px #ac722b;
+    transition-duration: 0.5s;
 }
 
-/* Responsividade */
-
-/* Para Tablet (até 1024px) */
-@media screen and (max-width: 1024px) {
-    #divisao1 {
-        padding: 50px 5%; /* Reduz padding */
-    }
-
-    .titulo {
-        font-size: 3rem;
-    }
-
+/* Responsividade para telas de computador */
+@media screen and (max-width: 1324px) {
     #divisao2 {
-        flex-direction: column; /* Alinha itens em coluna */
-        align-items: center; /* Centraliza itens */
+        columns: 2; /* Muda para duas colunas */
+        padding-left: 10%; /* Ajuste para melhor responsividade */
+        padding-right: 10%; /* Ajuste para melhor responsividade */
     }
 
-    #divisao3 {
-        flex-direction: column; /* Muda para coluna em telas pequenas */
-        align-items: center; /* Centraliza itens verticalmente */
+    #divisao2 h1, #divisao2 p {
+        margin-bottom: 20px;
     }
 
-    #titulodiv3 {
-        margin-right: 0; /* Remove margem à direita */
-        text-align: center; /* Centraliza o texto */
+    #imagem {
+        max-width: 300px; /* Ajusta a largura da imagem */
     }
 }
-
 /* Para Celular (até 768px) */
 @media screen and (max-width: 768px) {
     #divisao1 {
@@ -187,6 +175,10 @@ input {
     #divisao2 {
         font-size: 1rem;
     }
-}
 
+
+    .input {
+        font-size: 18px; /* Mantido */
+    }
+}
 
