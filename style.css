@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Alinha itens centralizados em telas pequenas */
+    align-items: center; /* Centraliza itens */
 }
 
 .titulo {
@@ -39,11 +39,15 @@ body {
 #divisao2 {
     background-color: #e9e9e9;
     padding: 50px 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    font-family: sans-serif;
-    font-size: 1.25rem;
+    display: flex; /* Muda para flex para centralizar */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza itens */
+    text-align: center; /* Centraliza texto */
+}
+
+/* Estilizando os itens dentro da Divisão 2 */
+#divisao2 h1, #divisao2 p {
+    margin-bottom: 1rem; /* Espaçamento inferior */
 }
 
 /* Divisão 3 (Descrição com Imagem) */
@@ -78,6 +82,8 @@ body {
     color: #ffffff;
     padding: 50px 5%;
     text-align: center;
+    width: 100%; /* Garante que a div cubra toda a largura */
+    position: relative; /* Permite que o fundo preto cubra completamente */
 }
 
 form {
@@ -121,7 +127,13 @@ input {
     }
 
     #divisao2 {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        flex-direction: column; /* Mantém a coluna em telas pequenas */
+        align-items: center; /* Centraliza itens */
+        text-align: center; /* Centraliza texto */
+    }
+
+    #divisao2 h1, #divisao2 p {
+        margin: 0; /* Remove margens para centralização */
     }
 }
 
@@ -169,4 +181,3 @@ input {
         font-size: 1rem;
     }
 }
-
