@@ -1,59 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Progeto Engenharia </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <title>Arquitetura Residencial e Comercial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
-
 <body>
-    <div id="divisao1"> 
-        <h1 class="titulo" >  Tradição em projetos de arquitetura </h1>
-        <p class="textodotitulo" > Arquitetura residencial e comercial.  </p>
-        </div>
-        <div id="divisao2" >
-
-            <h1 id="div2titulo1" > 850 </h1>
-            <p> empreendimentos construídos </p>
-
-            <h1> 40 </h1>
-            <p>  anos de mercado e experiência</p>
-
-            <h1> 2,000,000 </h1>
-            <p> m² em projetos construídos</p>
-
-        </div>
-
-           <div id="divisao3">
-            <h1 id="titulodiv3" > Arquitetos com História e experiência. </h1>
-            <p id="textodiv3" > Nós realizamos desde 2002 projetos e gerenciamento de obras. <br> Com mais de 800 projetos e 2.000.000 de m² construídos, tendo <br> como principal proposta transformar em realidade os sonhos de <br> seus clientes, criando projetos personalizados, unindo a tradição <br> e a modernidade em nossos projetos. </p>
-            <img id="imagem" src="imagens/imagemdacasa.svg" alt="FOTO">
-                
-            
-        </div>
-        <form  action="https://api.sheetmonkey.io/form/rh2Rcb7HnUBzGj3BxdvASJ" method="post">
-            <div id="divdoformulario" > 
-                <h1> Conheça mais sobre nossos serviços: <br> <br> </h1>
-                <input type="text" placeholder="Nome" name="Nome" required>
-                <input type="email" placeholder="Email" name="Email" required>
-                <input type="submit" class="input" value="Fale Conosco">
-                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+    <header>
+        <nav>
+            <div class="logo">Arquitetura Pro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </form>
-        
-         </div>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home" class="hero">
+            <h1>Tradição em Projetos de Arquitetura</h1>
+            <p>Arquitetura residencial e comercial de excelência</p>
+        </section>
 
+        <section id="stats" class="stats">
+            <div class="stat-item">
+                <h2>850</h2>
+                <p>Empreendimentos construídos</p>
+            </div>
+            <div class="stat-item">
+                <h2>40</h2>
+                <p>Anos de mercado e experiência</p>
+            </div>
+            <div class="stat-item">
+                <h2>2,000,000</h2>
+                <p>m² em projetos construídos</p>
+            </div>
+        </section>
 
+        <section id="about" class="about">
+            <div class="about-text">
+                <h2>Arquitetos com História e Experiência</h2>
+                <p>Desde 2002, realizamos projetos e gerenciamento de obras. Com mais de 800 projetos e 2.000.000 de m² construídos, nossa principal proposta é transformar em realidade os sonhos de nossos clientes, criando projetos personalizados que unem tradição e modernidade.</p>
+            </div>
+            <div class="about-image">
+                <img src="/api/placeholder/600/400" alt="Projeto arquitetônico" />
+            </div>
+        </section>
 
-    
+        <section id="contact" class="contact">
+            <h2>Conheça mais sobre nossos serviços:</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="tel" placeholder="Telefone" required>
+                <button type="submit">Fale Conosco</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arquitetura Pro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
