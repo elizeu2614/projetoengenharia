@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradição em projetos de arquitetura</title>
-    <link rel="stylesheet" href="styles.css">
+    <title> Progeto Engenharia </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap">
 </head>
+
 <body>
-    <header id="hero">
-        <h1>Tradição em projetos de arquitetura</h1>
-        <p>Arquitetura residencial e comercial.</p>
-    </header>
+    <div id="divisao1"> 
+        <h1 class="titulo"> tradição em projetos de arquitetura </h1>
+        <p class="textodotitulo"> Arquitetura residencial e comercial </p>
+    </div>
 
-    <section id="stats">
-        <div class="stat-item">
-            <h2>850</h2>
-            <p>empreendimentos construídos</p>
-        </div>
-        <div class="stat-item">
-            <h2>40</h2>
-            <p>anos de mercado e experiência</p>
-        </div>
-        <div class="stat-item">
-            <h2>2,000,000</h2>
-            <p>m² em projetos construídos</p>
-        </div>
-    </section>
+    <div id="divisao2">
+        <h1> 850 </h1>
+        <p> empreendimentos construídos </p>
+        <h1> 40 </h1>
+        <p> anos de mercado e experiência </p>
+        <h1> 2,000,000 </h1>
+        <p> m² em projetos construídos </p>
+    </div>
 
-    <section id="about">
-        <div class="about-content">
-            <h2>Arquitetos com História e experiência.</h2>
-            <p>Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais de 800 projetos e 2.000.000 de m² construídos, tendo como principal proposta transformar em realidade os sonhos de seus clientes, criando projetos personalizados, unindo a tradição e a modernidade em nossos projetos.</p>
-        </div>
-        <div class="about-image">
-            <img src="/api/placeholder/600/400" alt="Projeto arquitetônico">
-        </div>
-    </section>
+    <div id="divisao3">
+        <h1 id="titulodiv3"> Arquitetos com História e experiência. </h1>
+        <p id="textodiv3">
+            Nós realizamos desde 2002 projetos e gerenciamento de obras. Com mais de 800 projetos e 2.000.000 de m² construídos, 
+            transformando os sonhos de nossos clientes em realidade.
+        </p>
+        <img id="imagem" src="imagens/imagemdacasa.svg" alt="FOTO">
+    </div>
 
-    <section id="contact">
-        <h2>Conheça mais sobre nossos serviços:</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Telefone" required>
-            <button type="submit">Fale Conosco</button>
-        </form>
-    </section>
-
-    <script src="script.js"></script>
+    <form action="https://api.sheetmonkey.io/form/rh2Rcb7HnUBzGj3BxdvASJ" method="post">
+        <div id="divdoformulario">
+            <h1 id="textodiv4"> Conheça mais sobre nossos serviços: </h1>
+            <input type="text" placeholder="Nome" name="Nome" required>
+            <input type="email" placeholder="Email" name="Email" required>
+            <input type="submit" class="input" value="Fale Conosco">
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        </div>
+    </form>
 </body>
 </html>
