@@ -11,9 +11,9 @@ body {
 
 /* Divisão 1 (Banner Principal) */
 #divisao1 {
-    padding: 448px;
+    padding: 448px; /* Mantido */
     padding-bottom: 30px;
-    padding-left: 9.5%;
+    padding-left: 9.5%; /* Mantido */
     margin-top: 9px;
     margin: 0;
     background-color: #303030;
@@ -23,7 +23,7 @@ body {
 .titulo {
     color: #faf7f7;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 59px;
+    font-size: 59px; /* Mantido */
     position: absolute;
     top: 200px;
     bottom: 10px;
@@ -31,9 +31,9 @@ body {
 
 .textodotitulo {
     color: aliceblue;
-    font-size: 21px;
+    font-size: 21px; /* Mantido */
     font-family: sans-serif;
-    line-height: 48px;
+    line-height: 48px; /* Mantido */
     position: absolute;
     top: 277px;
     bottom: 10px;
@@ -42,21 +42,21 @@ body {
 /* Divisão 2 (Estatísticas) */
 #divisao2 {
     background-color: #e9e9e9;
-    padding-left: 180px;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-left: 180px; /* Mantido */
+    padding-top: 70px; /* Mantido */
+    padding-bottom: 50px; /* Mantido */
     display: block;
     font-family: sans-serif;
-    font-size: 20px;
-    columns: 3;
+    font-size: 20px; /* Mantido */
+    columns: 3; /* Mantido */
 }
 
 /* Divisão 3 (Descrição com Imagem) */
 #divisao3 {
-    padding-left: 1%;
-    margin: 50px;
-    padding-top: 185px;
-    font-size: 20px;
+    padding-left: 1%; /* Mantido */
+    margin: 50px; /* Mantido */
+    padding-top: 185px; /* Mantido */
+    font-size: 20px; /* Mantido */
     font-family: sans-serif;
 }
 
@@ -65,25 +65,25 @@ body {
 }
 
 #textodiv3 {
-    font-size: 26px;
-    margin-top: 50px;
+    font-size: 26px; /* Mantido */
+    margin-top: 50px; /* Mantido */
 }
 
 #imagem {
     position: absolute;
-    bottom: 300px;
-    top: 750px;
-    right: 5%;
-    width: 430px;
+    bottom: 300px; /* Mantido */
+    top: 750px; /* Mantido */
+    right: 5%; /* Mantido */
+    width: 430px; /* Mantido */
 }
 
 /* Formulário */
 #divdoformulario {
     display: grid;
     color: #ffffff;
-    margin-top: 170px;
-    padding: 100px;
-    padding-top: 99px;
+    margin-top: 170px; /* Mantido */
+    padding: 100px; /* Mantido */
+    padding-top: 99px; /* Mantido */
     background-color: #303030;
     text-align: center;
     font-family: sans-serif;
@@ -91,26 +91,26 @@ body {
 
 input {
     position: relative;
-    left: 23%;
+    left: 23%; /* Mantido */
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 22px; /* Mantido */
     background-color: #ffffff;
-    width: 500px;
-    margin: 30px;
-    padding: 25px;
+    width: 500px; /* Mantido */
+    margin: 30px; /* Mantido */
+    padding: 25px; /* Mantido */
     border-radius: 10px;
     border: none;
 }
 
 .input {
     cursor: pointer;
-    margin-top: 70px;
-    margin-left: 13.5%;
-    font-size: 30px;
-    padding: 20px;
+    margin-top: 70px; /* Mantido */
+    margin-left: 13.5%; /* Mantido */
+    font-size: 30px; /* Mantido */
+    padding: 20px; /* Mantido */
     border: none;
-    width: 290px;
+    width: 290px; /* Mantido */
     color: #f3f3f3;
     background-color: #C07212;
 }
@@ -121,10 +121,12 @@ input {
     transition-duration: 0.5s;
 }
 
-/* Responsividade para tablets e celulares */
+/* Responsividade para telas de computador */
 @media screen and (max-width: 1324px) {
     #divisao2 {
-        flex-direction: column;
+        columns: 2; /* Muda para duas colunas */
+        padding-left: 10%; /* Ajuste para melhor responsividade */
+        padding-right: 10%; /* Ajuste para melhor responsividade */
     }
 
     #divisao2 h1, #divisao2 p {
@@ -132,59 +134,59 @@ input {
     }
 
     #imagem {
-        max-width: 300px;
+        max-width: 300px; /* Ajusta a largura da imagem */
     }
 }
 
+/* Responsividade para tablets e celulares */
 @media screen and (max-width: 768px) {
     #divisao1 {
-        padding: 100px 5%;
+        padding: 100px 5%; /* Mantido */
     }
 
     .titulo {
-        font-size: 32px;
+        font-size: 32px; /* Mantido */
     }
 
     .textodotitulo {
-        font-size: 16px;
+        font-size: 16px; /* Mantido */
     }
 
     #divisao2 {
-        padding: 20px 5%;
-        font-size: 24px;
+        padding: 20px 5%; /* Mantido */
+        font-size: 24px; /* Mantido */
     }
 
     #divisao2 h1 {
-        font-size: 36px;
+        font-size: 36px; /* Mantido */
     }
 
     #divisao3 {
-        padding: 20px 5%;
+        padding: 20px 5%; /* Mantido */
     }
 
     #titulodiv3 {
-        font-size: 28px;
+        font-size: 28px; /* Mantido */
     }
 
     #textodiv3 {
-        font-size: 16px;
+        font-size: 16px; /* Mantido */
     }
 
     #imagem {
-        max-width: 200px;
+        max-width: 200px; /* Mantido */
     }
 
     #divdoformulario {
-        padding: 20px 5%;
+        padding: 20px 5%; /* Mantido */
     }
 
     #divdoformulario input {
-        max-width: 100%;
+        max-width: 100%; /* Mantido */
     }
 
     .input {
-        font-size: 18px;
+        font-size: 18px; /* Mantido */
     }
 }
-
 
