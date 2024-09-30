@@ -11,26 +11,32 @@ body {
 
 /* Divisão 1 (Banner Principal) */
 #divisao1 {
+    padding: 448px;
+    padding-bottom: 30px;
+    padding-left: 9.5%;
+    margin-top: 9px;
+    margin: 0;
     background-color: #303030;
-    padding: 200px 9.5%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: #faf7f7;
-    position: relative;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 .titulo {
+    color: #faf7f7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 59px;
-    text-align: left;
+    position: absolute;
+    top: 200px;
+    bottom: 10px;
 }
 
 .textodotitulo {
+    color: aliceblue;
     font-size: 21px;
-    text-align: left;
-    margin-top: 20px;
+    font-family: sans-serif;
     line-height: 48px;
+    position: absolute;
+    top: 277px;
+    bottom: 10px;
 }
 
 /* Divisão 2 (Estatísticas) */
@@ -39,77 +45,59 @@ body {
     padding-left: 180px;
     padding-top: 70px;
     padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     font-family: sans-serif;
     font-size: 20px;
-}
-
-#divisao2 h1 {
-    font-size: 48px;
-}
-
-#divisao2 p {
-    font-size: 18px;
-    margin-top: 10px;
+    columns: 3;
 }
 
 /* Divisão 3 (Descrição com Imagem) */
 #divisao3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 9.5%;
+    padding-left: 1%;
+    margin: 50px;
+    padding-top: 185px;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 
 #titulodiv3 {
-    font-size: 36px;
-    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #textodiv3 {
     font-size: 26px;
-    text-align: left;
-    margin-top: 20px;
-    line-height: 1.5;
+    margin-top: 50px;
 }
 
 #imagem {
+    position: absolute;
+    bottom: 300px;
+    top: 750px;
+    right: 5%;
     width: 430px;
-    height: auto;
-    margin-left: 50px;
-}
-
-/* Ajuste de quebra de linha no texto */
-#textodiv3 br {
-    display: block;
-    margin-bottom: 20px;
 }
 
 /* Formulário */
 #divdoformulario {
-    background-color: #303030;
-    padding: 50px;
+    display: grid;
     color: #ffffff;
+    margin-top: 170px;
+    padding: 100px;
+    padding-top: 99px;
+    background-color: #303030;
     text-align: center;
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#textodiv4 {
-    margin-bottom: 30px; /* Espaçamento maior entre o título e os inputs */
 }
 
 input {
+    position: relative;
+    left: 23%;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 22px;
     background-color: #ffffff;
     width: 500px;
-    margin: 10px;
+    margin: 30px;
     padding: 25px;
     border-radius: 10px;
     border: none;
@@ -117,8 +105,11 @@ input {
 
 .input {
     cursor: pointer;
+    margin-top: 70px;
+    margin-left: 13.5%;
     font-size: 30px;
     padding: 20px;
+    border: none;
     width: 290px;
     color: #f3f3f3;
     background-color: #C07212;
@@ -130,7 +121,7 @@ input {
     transition-duration: 0.5s;
 }
 
-/* Responsividade para tablets e celulares (já aprovada por você) */
+/* Responsividade para tablets e celulares */
 @media screen and (max-width: 1324px) {
     #divisao2 {
         flex-direction: column;
