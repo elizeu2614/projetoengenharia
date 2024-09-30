@@ -60,13 +60,13 @@ body {
 }
 
 #titulodiv3 {
-    margin-top: 20px;
+    margin-botton: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #textodiv3 {
     font-size: 26px; /* Mantido */
-    margin-top: 40px; /* Mantido */
+    margin-top: 30px; /* Mantido */
 }
 
 #imagem {
