@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,107 +10,98 @@ body {
 
 /* Divisão 1 (Banner Principal) */
 #divisao1 {
-    padding: 448px; /* Mantido */
+    padding: 448px;
     padding-bottom: 30px;
-    padding-left: 9.5%; /* Mantido */
-    margin-top: 9px;
+    padding-left: 9.5%;
     margin: 0;
     background-color: #303030;
     overflow-x: hidden;
+    text-align: left; /* Alinha o conteúdo à esquerda */
 }
 
 .titulo {
     color: #faf7f7;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 59px; /* Mantido */
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 59px;
     position: absolute;
     top: 200px;
-    bottom: 10px;
 }
 
 .textodotitulo {
     color: aliceblue;
-    font-size: 21px; /* Mantido */
+    font-size: 21px;
     font-family: sans-serif;
-    line-height: 48px; /* Mantido */
+    line-height: 48px;
     position: absolute;
     top: 277px;
-    bottom: 10px;
 }
 
 /* Divisão 2 (Estatísticas) */
 #divisao2 {
     background-color: #e9e9e9;
-    padding-left: 180px; /* Mantido */
-    padding-top: 70px; /* Mantido */
-    padding-bottom: 50px; /* Mantido */
-    display: block;
+    padding: 70px 180px 50px 180px;
+    display: flex;
+    justify-content: space-between;
     font-family: sans-serif;
-    font-size: 20px; /* Mantido */
-    columns: 3; /* Mantido */
+    font-size: 20px;
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Divisão 3 (Descrição com Imagem) */
 #divisao3 {
-    padding-left: 1%; /* Mantido */
-    margin: 50px; /* Mantido */
-    padding-top: 250px; /* Mantido */
-    font-size: 20px; /* Mantido */
+    display: flex;
+    justify-content: space-between;
+    padding: 250px 1%;
     font-family: sans-serif;
+    font-size: 20px;
 }
 
 #titulodiv3 {
-    margin-botton: 90px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 90px;
+    font-family: 'Lucida Sans', Geneva, sans-serif;
 }
 
 #textodiv3 {
-    font-size: 26px; /* Mantido */
-    margin-top: 20px; /* Mantido */
+    font-size: 26px;
+    margin-top: 20px;
 }
 
 #imagem {
-    position: absolute;
-    bottom: 300px; /* Mantido */
-    top: 750px; /* Mantido */
-    right: 5%; /* Mantido */
-    width: 430px; /* Mantido */
+    width: 430px;
+    height: auto;
+    margin-left: 20px; /* Para ajustar a posição da imagem */
 }
 
 /* Formulário */
 #divdoformulario {
     display: grid;
+    justify-content: center;
     color: #ffffff;
-    margin-top: 170px; /* Mantido */
-    padding: 100px; /* Mantido */
-    padding-top: 99px; /* Mantido */
+    margin-top: 170px;
+    padding: 100px;
     background-color: #303030;
     text-align: center;
     font-family: sans-serif;
 }
 
 input {
-    position: relative;
-    left: 23%; /* Mantido */
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 22px; /* Mantido */
+    font-size: 22px;
     background-color: #ffffff;
-    width: 500px; /* Mantido */
-    margin: 30px; /* Mantido */
-    padding: 25px; /* Mantido */
+    width: 500px;
+    margin: 30px;
+    padding: 25px;
     border-radius: 10px;
     border: none;
 }
 
 .input {
     cursor: pointer;
-    margin-top: 70px; /* Mantido */
-    margin-left: 11.5%; /* Mantido */
-    font-size: 30px; /* Mantido */
-    padding: 20px; /* Mantido */
-    border: none;
-    width: 290px; /* Mantido */
+    margin-top: 70px;
+    font-size: 30px;
+    padding: 20px;
+    width: 290px;
     color: #f3f3f3;
     background-color: #C07212;
 }
@@ -124,72 +115,74 @@ input {
 /* Responsividade para telas de computador */
 @media screen and (max-width: 1324px) {
     #divisao2 {
-        columns: 2; /* Muda para duas colunas */
-        padding-left: 10%; /* Ajuste para melhor responsividade */
-        padding-right: 10%; /* Ajuste para melhor responsividade */
-    }
-
-    #divisao2 h1,
-    #divisao2 p {
-        margin-bottom: 20px;
+        flex-direction: column;
+        padding: 20px;
     }
 
     #imagem {
-        max-width: 300px; /* Ajusta a largura da imagem */
+        max-width: 300px;
+    }
+}
+
+/* Para Tablets (até 1024px) */
+@media screen and (max-width: 1024px) {
+    #divisao1, #divisao2, #divisao3 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #divisao2 {
+        flex-direction: column;
+    }
+
+    #imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    input, .input {
+        width: 100%;
+        font-size: 1.2rem;
     }
 }
 
 /* Para Celular (até 768px) */
 @media screen and (max-width: 768px) {
     #divisao1 {
-        padding: 30px 5%; /* Ajusta o padding */
-        align-items: center; /* Centraliza itens */
-        text-align: center; /* Centraliza o texto */
+        padding: 30px 5%;
+        text-align: center;
     }
 
     .titulo {
         font-size: 2.5rem;
-        position: static; /* Remove a posição absoluta */
-        margin: 0 auto; /* Centraliza horizontalmente */
+        position: static;
     }
 
     .textodotitulo {
         font-size: 1.1rem;
-        position: static; /* Remove a posição absoluta */
-        margin: 0 auto; /* Centraliza horizontalmente */
+        position: static;
     }
 
     #divisao2 {
-        padding: 20px; /* Ajusta o padding */
-        font-size: 1rem; /* Ajusta o tamanho da fonte */
-        columns: 1; /* Muda para uma coluna */
-    }
-
-    #titulodiv3 {
-        font-size: 1.8rem;
-    }
-
-    #textodiv3 {
+        padding: 20px;
         font-size: 1rem;
+        flex-direction: column;
     }
 
-    input,
-    .input {
+    #divisao3 {
+        flex-direction: column;
+    }
+
+    #imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    input, .input {
+        width: 90%;
         font-size: 1rem;
-        max-width: 90%; /* Adiciona largura máxima para telas pequenas */
-        left: 0; /* Remove a posição relativa */
-        margin: 0 auto; /* Centraliza horizontalmente */
     }
 }
-
-@media screen and (max-width: 400px) {
-    .titulo {
-        font-size: 2rem;
-    }
-
-    #divisao2 {
-        font-size: 1rem;
-    }
 
     .input {
         font-size: 18px; /* Mantido */
