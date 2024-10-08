@@ -1,15 +1,20 @@
-Landing Page - HTML & CSS
-Esta é uma landing page que desenvolvi utilizando HTML e CSS, hospedada no Netlify. O projeto foi criado com o objetivo de praticar minhas habilidades em desenvolvimento Front-end e demonstrar meu entendimento sobre design responsivo.
+*Projeto de Engenharia*
 
-Recursos:
+Este projeto foi desenvolvido durante o curso da DNC e é uma aplicação que demonstra minhas habilidades em HTML e CSS. O objetivo principal foi criar uma interface responsiva e visualmente atraente, que atenda às necessidades dos usuários de maneira eficaz.
 
-Estrutura limpa e organizada em HTML.
-Estilos personalizados com CSS, incluindo animações e efeitos visuais.
-Layout responsivo que se adapta a diferentes tamanhos de tela, proporcionando uma boa experiência de usuário em dispositivos móveis e desktops.
-Tecnologias Utilizadas:
+Funcionalidades
+Design Responsivo: Utilizando técnicas de CSS, o projeto adapta-se a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente em dispositivos móveis e desktops.
+Estrutura Semântica: O uso adequado de tags HTML5 proporciona uma melhor acessibilidade e SEO, facilitando a navegação e a compreensão do conteúdo.
+Estilo Personalizado: Com um foco em design, foram aplicadas cores, fontes e espaçamentos que refletem a identidade visual proposta, resultando em um layout harmonioso e atraente.
 
-HTML5
-CSS3
+Tecnologias Utilizadas
+HTML: Estruturação do conteúdo e semântica.
+CSS: Estilização e layout responsivo.
+
+Conclusão
+Este projeto representa uma etapa importante no meu aprendizado e prática em desenvolvimento front-end. Através dele, refinei minhas habilidades técnicas e estéticas, além de aprimorar minha capacidade de criar soluções de design que atendem a requisitos específicos.
+
+
 
 link do site disponibilizado >> https://desafiodnc2.netlify.app/
 
