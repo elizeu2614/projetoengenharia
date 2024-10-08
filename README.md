@@ -4,7 +4,9 @@ Esta é uma landing page que desenvolvi utilizando HTML e CSS, hospedada no Netl
 Recursos:
 
 Estrutura limpa e organizada em HTML.
+
 Estilos personalizados com CSS, incluindo animações e efeitos visuais.
+
 Layout responsivo que se adapta a diferentes tamanhos de tela, proporcionando uma boa experiência de usuário em dispositivos móveis e desktops.
 Tecnologias Utilizadas:
 
