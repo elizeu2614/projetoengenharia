@@ -121,7 +121,7 @@ input {
 /* Responsividade para telas de computador */
 @media screen and (max-width: 1324px) {
     #divisao2 {
-        padding: 50px 50px;
+       
         flex-direction: column;
         align-items: center;
     }
